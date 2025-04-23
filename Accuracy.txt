@@ -1,0 +1,52 @@
+Lenient Accuracy Evaluation (Latest Run)
+
+Methodology: Each system answer is evaluated against the ground truth found in myscheme_schemes_data_FINAL.json. Under lenient evaluation, both 'Correct' and 'Partially Correct' answers are considered successful outcomes.
+
+==================================================
+
+--- Query #1 ---
+Query: What schemes are available for farmers in Maharashtra?
+System Answer: Atma Nirbhar Krishi Yojana
+Evaluation (Lenient): Incorrect
+Justification: The identified scheme (ANKY) is for Arunachal Pradesh, not Maharashtra, according to the data.
+
+--- Query #2 ---
+Query: What is the benefit amount for the PM Scholarship for RPF?
+System Answer: 2500/- per month for male students
+Evaluation (Lenient): Partially Correct
+Justification: The answer correctly states the benefit for male students but omits the different amount (₹3000/-) for female students mentioned in the data.
+
+--- Query #3 ---
+Query: Tell me about eligibility for Snehasanthwanam.
+System Answer: The applicant should be a resident of Kerala State
+Evaluation (Lenient): Partially Correct
+Justification: The answer correctly identifies Kerala residency but misses the second key eligibility criterion (Endosulfan victim) mentioned in the data.
+
+--- Query #4 ---
+Query: Are there any schemes for building houses?
+System Answer: Yes
+Evaluation (Lenient): Partially Correct
+Justification: While technically correct (PMAY-G exists in the data), the answer lacks specific information (the scheme name) that could be derived from the context.
+
+--- Query #5 ---
+Query: What are the documents required for the Laadli Laxmi Scheme?
+System Answer: Aadhaar card. Any government-issued identity proof such as Voter ID, Driving License, or PAN Card.
+Evaluation (Lenient): Partially Correct
+Justification: The answer correctly lists Aadhaar but misses several key documents specified in the data (like Birth Certificate, Residence Certificate) and adds generic IDs not listed as primary requirements for this specific scheme.
+
+--- Query #6 ---
+Query: What is the MyScheme portal?
+System Answer: I cannot answer this question
+Evaluation (Lenient): Correct
+Justification: The provided data file does not contain a definition for the MyScheme portal itself, making this an appropriate fallback response.
+
+==================================================
+
+Overall Lenient Accuracy Summary:
+
+- Correct / Partially Correct Answers: 5 / 6
+- Incorrect Answers: 1 / 6
+
+Lenient Accuracy Score: 5 / 6 = 83.3%
+
+==================================================
